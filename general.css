@@ -78,8 +78,7 @@ body {
   gap: 5.6rem;
 }
 .heading-secondary,
-.heading-primary,
-.heading-tertairy {
+.heading-primary {
   font-weight: 700;
   margin-bottom: 9.6rem;
   color: #333;
@@ -130,29 +129,6 @@ body {
 .hero-img {
   width: 100%;
 }
-.section-featured{
-  padding: 4.8rem 0 3.2rem;
-}
-.heading-featured-in{
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 2.4rem;
-  color: #888;
-}
-.logos{
-  display: flex;
-  justify-content:space-around ;
-}
-.logos img{
-  height: 3.2rem;
-  filter:brightness(0);
-  opacity: 50%;
-
-
-}
 .delivered-meals {
   display: flex;
   align-items: center;
@@ -193,13 +169,20 @@ body {
 }
 .grid {
   display: grid;
+  column-gap: 0.4rem ;
   gap: 9.6rem;
+
+  
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--center-v{
+  align-items: center ;
+
 }
 
 .section-how {
@@ -208,65 +191,22 @@ body {
 
   /* background-color: orangered; */
 }
-.step-number {
+.step-number{
   font-size: 8.6rem;
-  font-weight: 600;
-  color: #d5c8c891;
+  font-weight:600 ;
+  color: #eee;
   margin-bottom: 1.2rem;
 }
 .step-img {
-  width: 40%;
-  /* z-index: 10; */
-}
-.step-img-box {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.step-img-box::before,
-.step-img-box::after
-{
-  content:"" ;
-  display: block;
-  border-radius: 50%;
-  width: 60%;
-  /* height: 60%; */
-  padding-bottom: 60%;
-  background-color: #d71a1a;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  z-index: -1 ;
-}
-.step-img-box::before{
-width: 60%;
-padding-bottom: 60%;
-/* background-color: rgba(185, 9, 9, 0.614); */
-z-index: -2;
-}
-.step-img-box::after{
   width: 50%;
-  padding-bottom: 50%;
-  background-color: #7e542d;
-  z-index: -1;
 }
-.heading-tertairy {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-}
+/* .heading-tertiary{
+  
+} */
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   /* color: ; */
-}
-.step-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
 }
 .subheading {
   display: block;
